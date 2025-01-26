@@ -10,9 +10,11 @@ from typing import Dict, List
 
 # Define prompts as constants
 JOURNEY_ANALYSIS_PROMPT = """
-Analyze these customer reviews and identify the main customer journey steps.
-Return ONLY a list of journey steps in a JSON array format.
+Analyze these customer reviews and identify a minimum of 10 customer journey steps.
+Ensure steps include the customer using the service or product.
 The steps should be chronological and represent the typical customer journey.
+Return ONLY a list of journey step titles in a JSON array format.
+DO NOT include ',', 'eg.', 'e.g.', 'for example', 'such as', 'like', 'e.g.,' or 'i.e.'.
 """
 
 # Load environment variables

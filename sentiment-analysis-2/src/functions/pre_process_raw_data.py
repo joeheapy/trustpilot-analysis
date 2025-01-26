@@ -10,12 +10,19 @@ def parse_complex_date(date_string):
         return date_string
 
 def pre_process_raw_data():
-    # Create directory if it doesn't exist
-    output_dir = 'sentiment-analysis-2/src/data/pre-processed-raw-data'
+    """Pre-process raw data files"""
+    # Get absolute path to project root
+    current_dir = os.path.dirname(os.path.abspath(__file__))  # /functions
+    src_dir = os.path.dirname(current_dir)  # /src
+    data_dir = os.path.join(src_dir, 'data')  # /src/data
+    
+    # Setup directories using absolute paths
+    output_dir = os.path.join(data_dir, 'pre-processed-raw-data')
+    raw_data_dir = os.path.join(data_dir, 'raw-trustpilot-data')
+    
     os.makedirs(output_dir, exist_ok=True)
     
     # Get the first JSON file from raw-trustpilot-data directory
-    raw_data_dir = 'sentiment-analysis-2/src/data/raw-trustpilot-data'
     json_files = [f for f in os.listdir(raw_data_dir) if f.endswith('.json')]
     
     if not json_files:
@@ -53,5 +60,5 @@ def pre_process_raw_data():
         json.dump(processed_data, file, indent=2, ensure_ascii=False)
         
     print(f"Successfully pre-processed and saved reviews.")
-    
+
     return output_path
