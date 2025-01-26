@@ -2,11 +2,11 @@ import json
 import os
 from datetime import datetime
 
-def parse_complex_date(date_string):
+def parse_experience_date(date_string):
     try:
-        return datetime.strptime(date_string, '%A, %B %d, %Y at %I:%M:%S %p').strftime('%Y-%m-%d')
+        return datetime.strptime(date_string, '%B %d, %Y').strftime('%Y-%m-%d')
     except ValueError as e:
-        print(f"Warning: Could not parse date: {date_string}")
+        print(f"Warning: Could not parse experience date: {date_string}")
         return date_string
 
 def pre_process_raw_data():
@@ -42,8 +42,7 @@ def pre_process_raw_data():
     processed_data = []
     for review in data:
         processed_review = {
-            'reviewDate': parse_complex_date(review['reviewDate']),
-            'reviewDateOfExperience': review['reviewDateOfExperience'],
+            'reviewDateOfExperience': parse_experience_date(review['reviewDateOfExperience']),
             'reviewTitle': review['reviewTitle'],
             'reviewDescription': review['reviewDescription'],
             'reviewRatingScore': review['reviewRatingScore']

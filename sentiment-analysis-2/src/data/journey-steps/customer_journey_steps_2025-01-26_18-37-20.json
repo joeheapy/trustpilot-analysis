@@ -1,0 +1,16 @@
+{
+  "journeySteps": [
+    "Search for Flights",
+    "Customer Books a Flight",
+    "Seat Selection and Special Requests",
+    "Check-in Online",
+    "Arrival at Airport",
+    "Baggage Check-in",
+    "Security Check",
+    "Boarding",
+    "In-flight Experience",
+    "Flight Delays or Cancellations",
+    "Arrival and Baggage Claim",
+    "Post-flight Customer Service"
+  ]
+}

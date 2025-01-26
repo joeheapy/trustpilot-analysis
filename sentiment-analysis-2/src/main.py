@@ -9,15 +9,12 @@ def main():
         
         # Process the data
         output_file = pre_process_raw_data()
-        print(f"Successfully pre-processed and saved reviews.")
         
         # Extract sample reviews
         sample_file = extract_sample_reviews()
-        print(f"Successfully extracted sample reviews.")
         
         # Analyze journey steps
         journey_file = analyze_journey_steps()
-        print(f"Journey steps saved to: {journey_file}")
         
     except Exception as e:
         print(f"Error: {str(e)}")
