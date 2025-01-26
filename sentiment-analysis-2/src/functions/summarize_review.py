@@ -9,22 +9,45 @@ BATCH_SIZE = 2
 
 # Define prompt as constant
 SUMMARY_PROMPT = """
-Summarize the review in detailed two sentances and return ONLY this JSON structure:
+Using the provided journey steps, analyze this review and:
+1. Create a concise summary of the reviewDescription in two detailed sentences or less.
+2. Assign the most relevant journey step to each reviewSummary.
+
+Return ONLY this JSON structure:
 {
     "reviewSummary": "<your generated summary>",
+    "journeyStep": "<matching journey step from provided list>"
 }
-Focus on key points and maintain factual information.
-Keep emotional content if relevant.
-Do not include the original reviewDescription in the response.
+
+Rules:
+- Keep emotional content in the summary if relevant
+- Each review MUST be assigned to exactly one journey step
+- Use original journey step text exactly as provided
+
 """
 
-def chunk_reviews(reviews: list, chunk_size: int = BATCH_SIZE) -> list:
+def chunk_reviews(reviews: List[Dict], batch_size: int = BATCH_SIZE) -> List[List[Dict]]:
     """Split reviews into chunks of specified size"""
-    return [reviews[i:i + chunk_size] for i in range(0, len(reviews), chunk_size)]
+    return [reviews[i:i + batch_size] for i in range(0, len(reviews), batch_size)]
 
+def get_latest_journey_steps():
+    """Get latest journey steps file content"""
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    journey_dir = os.path.join(os.path.dirname(os.path.dirname(current_dir)), 'src', 'data', 'journey-steps')
+    journey_files = glob(os.path.join(journey_dir, 'customer_journey_steps_*.json'))
+    
+    if not journey_files:
+        raise FileNotFoundError("No journey steps file found")
+    
+    latest_file = max(journey_files, key=os.path.getctime)
+    with open(latest_file, 'r') as f:
+        return json.load(f)
 
 def summarize_review() -> str:
-    """Add AI-generated summaries to each review in batches"""
+    """Add AI-generated summaries and journey steps to reviews"""
+    
+    # Get journey steps
+    journey_steps = get_latest_journey_steps()
     
     # Setup paths
     current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -71,21 +94,21 @@ def summarize_review() -> str:
             batch_summaries = []
             
             for review in batch:
-                # API call already uses response_format parameter
                 response = client.chat.completions.create(
                     model="gpt-4-turbo-preview",
                     messages=[
-                        {"role": "system", "content": "You are a review summarization expert."},
-                        {"role": "user", "content": f"{SUMMARY_PROMPT}\n\nReview: {review['reviewDescription']}"}
+                        {"role": "system", "content": "You are a review analysis expert."},
+                        {"role": "user", "content": f"Journey Steps:\n{json.dumps(journey_steps, indent=2)}\n\n{SUMMARY_PROMPT}\n\nReview: {review['reviewDescription']}"}
                     ],
                     response_format={"type": "json_object"}
                 )
                 
-                # Get summary from response
-                summary_data = json.loads(response.choices[0].message.content)
+                # Get processed data from response
+                result = json.loads(response.choices[0].message.content)
                 
-                # Replace description with summary in original review
-                review['reviewSummary'] = summary_data['reviewSummary']
+                # Update review with new fields
+                review['reviewSummary'] = result['reviewSummary']
+                review['journeyStep'] = result['journeyStep']
                 del review['reviewDescription']
                 
                 batch_summaries.append(review)
