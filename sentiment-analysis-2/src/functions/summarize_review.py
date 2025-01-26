@@ -5,11 +5,11 @@ from datetime import datetime
 from openai import OpenAI
 from typing import List, Dict
 
-BATCH_SIZE = 10
+BATCH_SIZE = 2
 
 # Define prompt as constant
 SUMMARY_PROMPT = """
-Summarize the review concisely and return ONLY this JSON structure:
+Summarize the review in detailed two sentances and return ONLY this JSON structure:
 {
     "reviewSummary": "<your generated summary>",
 }
@@ -81,9 +81,14 @@ def summarize_review() -> str:
                     response_format={"type": "json_object"}
                 )
                 
-                # Parse response and append
+                # Get summary from response
                 summary_data = json.loads(response.choices[0].message.content)
-                batch_summaries.append(summary_data)
+                
+                # Replace description with summary in original review
+                review['reviewSummary'] = summary_data['reviewSummary']
+                del review['reviewDescription']
+                
+                batch_summaries.append(review)
             
             # Append batch to output file
             summarized_reviews.extend(batch_summaries)

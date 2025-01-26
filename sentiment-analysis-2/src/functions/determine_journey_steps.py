@@ -9,7 +9,7 @@ from openai import AsyncOpenAI
 from typing import Dict, List
 
 # Reviews per sample
-REVIEWS_PER_SAMPLE = 10
+REVIEWS_PER_SAMPLE = 50
 
 # Define prompts as constants
 JOURNEY_ANALYSIS_PROMPT = """
