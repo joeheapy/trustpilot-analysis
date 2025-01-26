@@ -1,0 +1,16 @@
+{
+  "journeySteps": [
+    "Discover airline options",
+    "Evaluate airline based on price and services",
+    "Book flight",
+    "Prepare for travel (packing, check travel requirements)",
+    "Attempt online check-in and encounter issues",
+    "Check in at airport",
+    "Drop off luggage",
+    "Go through airport security",
+    "Wait for boarding and board the plane",
+    "Try to use in-flight services (entertainment, food, safety equipment)",
+    "Experience in-flight customer service",
+    "Complete flight and deal with post-flight issues (luggage claim, customer service calls)"
+  ]
+}

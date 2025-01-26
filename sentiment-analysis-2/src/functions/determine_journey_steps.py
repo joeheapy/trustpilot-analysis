@@ -8,6 +8,9 @@ from openai import OpenAI
 from openai import AsyncOpenAI
 from typing import Dict, List
 
+# Reviews per sample
+REVIEWS_PER_SAMPLE = 10
+
 # Define prompts as constants
 JOURNEY_ANALYSIS_PROMPT = """
 Analyze these customer reviews and identify a minimum of 12 customer journey steps.
@@ -47,7 +50,7 @@ def extract_sample_reviews() -> str:
         with open(latest_file, 'r') as file:
             reviews = json.load(file)
         
-        sample_size = min(100, len(reviews))
+        sample_size = min(REVIEWS_PER_SAMPLE, len(reviews))
         sample = random.sample(reviews, sample_size)
         
         # Extract only reviewDescription

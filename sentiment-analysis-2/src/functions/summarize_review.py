@@ -5,14 +5,20 @@ from datetime import datetime
 from openai import OpenAI
 from typing import List, Dict
 
+BATCH_SIZE = 10
+
 # Define prompt as constant
 SUMMARY_PROMPT = """
-Summarize this review in a single concise sentence.
-Focus on the key points and maintain factual information.
+Summarize the review concisely and return ONLY this JSON structure:
+{
+    "reviewSummary": "<your generated summary>",
+}
+Focus on key points and maintain factual information.
 Keep emotional content if relevant.
+Do not include the original reviewDescription in the response.
 """
 
-def chunk_reviews(reviews: list, chunk_size: int = 100) -> list:
+def chunk_reviews(reviews: list, chunk_size: int = BATCH_SIZE) -> list:
     """Split reviews into chunks of specified size"""
     return [reviews[i:i + chunk_size] for i in range(0, len(reviews), chunk_size)]
 
@@ -65,17 +71,19 @@ def summarize_review() -> str:
             batch_summaries = []
             
             for review in batch:
+                # API call already uses response_format parameter
                 response = client.chat.completions.create(
                     model="gpt-4-turbo-preview",
                     messages=[
                         {"role": "system", "content": "You are a review summarization expert."},
                         {"role": "user", "content": f"{SUMMARY_PROMPT}\n\nReview: {review['reviewDescription']}"}
-                    ]
+                    ],
+                    response_format={"type": "json_object"}
                 )
                 
-                # Add summary to review
-                review['reviewSummary'] = response.choices[0].message.content
-                batch_summaries.append(review)
+                # Parse response and append
+                summary_data = json.loads(response.choices[0].message.content)
+                batch_summaries.append(summary_data)
             
             # Append batch to output file
             summarized_reviews.extend(batch_summaries)
