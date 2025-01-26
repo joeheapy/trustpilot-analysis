@@ -119,7 +119,7 @@ def analyze_journey_steps() -> str:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(journey_steps, f, indent=2)
         
-        print(f"Journey steps saved to: {output_file}")
+        print(f"Journey steps saved")
         return output_file
         
     except Exception as e:
