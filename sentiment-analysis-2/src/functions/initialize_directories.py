@@ -4,10 +4,11 @@ import os
 
 # Constants for directory structure
 DIRECTORIES_TO_CLEAN = [
-    'journey-steps',
     'pre-processed-raw-data',
     'sample_for_journey_determination',
-    'summarized-reviews'
+    'journey-steps',
+    'summarized-reviews',
+    'ratings-by-step'
 ]
 
 DIRECTORIES_TO_PRESERVE = [
@@ -35,11 +36,11 @@ def initialize_directories():
     for dir_name in DIRECTORIES_TO_CLEAN:
         try:
             full_path = os.path.join(data_dir, dir_name)
-            print(f"Processing directory: {full_path}")
+            # print(f"Processing directory: {full_path}")
             
             if os.path.exists(full_path):
                 shutil.rmtree(full_path)
-                print(f"Removed existing directory: {full_path}")
+                # print(f"Removed existing directory: {full_path}")
             
             os.makedirs(full_path)
             print(f"Created directory: {full_path}")

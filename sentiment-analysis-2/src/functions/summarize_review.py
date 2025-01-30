@@ -5,12 +5,14 @@ from datetime import datetime
 from openai import OpenAI
 from typing import List, Dict
 
-BATCH_SIZE = 2
+# Constants
+BATCH_SIZE = 5
+MAX_BATCHES = 20  # Set maximum number of batches to process
 
 # Define prompt as constant
 SUMMARY_PROMPT = """
 Using the provided journey steps, analyze this review and:
-1. Create a concise summary of the reviewDescription in two detailed sentences or less.
+1. Create a summary of the reviewDescription in maximum three sentances.
 2. Assign the most relevant journey step to each reviewSummary.
 
 Return ONLY this JSON structure:
@@ -20,15 +22,11 @@ Return ONLY this JSON structure:
 }
 
 Rules:
-- Keep emotional content in the summary if relevant
-- Each review MUST be assigned to exactly one journey step
-- Use original journey step text exactly as provided
+- Keep emotional content in the summary if relevant.
+- Each review MUST be assigned to exactly one journey step.
+- Use original journey step text exactly as provided.
 
 """
-
-def chunk_reviews(reviews: List[Dict], batch_size: int = BATCH_SIZE) -> List[List[Dict]]:
-    """Split reviews into chunks of specified size"""
-    return [reviews[i:i + batch_size] for i in range(0, len(reviews), batch_size)]
 
 def get_latest_journey_steps():
     """Get latest journey steps file content"""
@@ -42,6 +40,12 @@ def get_latest_journey_steps():
     latest_file = max(journey_files, key=os.path.getctime)
     with open(latest_file, 'r') as f:
         return json.load(f)
+
+
+def chunk_reviews(reviews: list, batch_size: int = BATCH_SIZE) -> list:
+    """Split reviews into chunks of specified size"""
+    return [reviews[i:i + batch_size] for i in range(0, len(reviews), batch_size)]
+
 
 def summarize_review() -> str:
     """Add AI-generated summaries and journey steps to reviews"""
@@ -79,21 +83,21 @@ def summarize_review() -> str:
     output_path = os.path.join(output_dir, output_filename)
     
     # Process reviews in batches
-    batches = chunk_reviews(reviews)
-    total_batches = len(batches)
+    batches = chunk_reviews(reviews, BATCH_SIZE)
+    total_batches = min(len(batches), MAX_BATCHES)
     summarized_reviews = []
     
-    print(f"\nProcessing {len(reviews)} reviews in {total_batches} batches")
-    print("\nFirst batch content:")
-    print(json.dumps(batches[0], indent=2))
+    print(f"\nProcessing {len(reviews)} reviews in {total_batches} batches (limited to {MAX_BATCHES})")
+    # print("\nFirst batch content:")
+    # print(json.dumps(batches[0], indent=2))
     print("\nStarting batch processing...\n")
     
-    for batch_num, batch in enumerate(batches, 1):
+    for batch_num in range(1, total_batches + 1):
         try:
             print(f"Processing batch {batch_num}/{total_batches}")
             batch_summaries = []
             
-            for review in batch:
+            for review in batches[batch_num - 1]:
                 response = client.chat.completions.create(
                     model="gpt-4-turbo-preview",
                     messages=[

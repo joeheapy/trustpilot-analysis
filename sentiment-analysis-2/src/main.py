@@ -2,6 +2,7 @@ from functions.initialize_directories import initialize_directories
 from functions.pre_process_raw_data import pre_process_raw_data
 from functions.determine_journey_steps import extract_sample_reviews, analyze_journey_steps
 from functions.summarize_review import summarize_review
+from functions.count_ratings_by_step import count_ratings_by_step
 
 def main():
     try:
@@ -19,6 +20,10 @@ def main():
 
         # Summarize review
         summary_file = summarize_review()
+
+        # Count ratings by step
+        count_ratings_by_step()
+
         
     except Exception as e:
         print(f"Error: {str(e)}")

@@ -1,0 +1,16 @@
+{
+  "journeySteps": [
+    "Discovering airline and flight options",
+    "Booking the flight",
+    "Paying deposit or full amount for flight",
+    "Seat selection and special requests",
+    "Receiving booking confirmation",
+    "Online check-in or app usage",
+    "Arriving at airport",
+    "Checking in luggage",
+    "Going through security",
+    "Waiting at the gate",
+    "Boarding the flight",
+    "Experiencing in-flight service"
+  ]
+}
