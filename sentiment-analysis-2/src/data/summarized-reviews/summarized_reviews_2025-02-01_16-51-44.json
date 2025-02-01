@@ -1,0 +1,387 @@
+[
+  {
+    "reviewDateOfExperience": "2025-01-17",
+    "reviewTitle": "Absolutely horrible",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The review expresses deep dissatisfaction with the airline's prices, planes, and customer service, crediting only the pilot for competence.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2024-06-21",
+    "reviewTitle": "BA YOU SHOULD BE ASHAMED OF YOURSELVES",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The flight from Edinburgh to Rome via London Heathrow was significantly delayed due to passengers and technical issues, leading to missed connections and poor customer service, including refusal of compensation despite promises. The travelers experienced frustration with the airline's handling of the situation, including long waits, insufficient meal vouchers during the delay, and challenging interactions with customer service.",
+    "journeyStep": "Boarding the plane"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-16",
+    "reviewTitle": "BRITISH AIRWAYS AWFUL SERVICE",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The reviewer had a disappointing experience with British Airways, including being shifted from a purchased seat upgrade due to knee issues without explanation and facing a prolonged, unresolved refund process. Attempts to resolve the issue through multiple contacts and a chat service were unsuccessful, highlighting poor customer service.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2024-11-17",
+    "reviewTitle": "British Airways happy to 'steal' from customers! Appalling treatment!",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The reviewer is extremely frustrated with British Airways' booking process for a cello, experiencing misinformation and poor customer service, leading to a failure to secure a seat for the cello and a refusal to refund a previously purchased seat. Despite multiple attempts and assurances, the process was fraught with errors and miscommunications, culminating in a loss of money and the need to find an alternative flight.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-06",
+    "reviewTitle": "DO NOT FLY WITH BA!",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer experienced a significant delay in baggage retrieval, resulting in a missed connecting flight and additional expenses for accommodation and meals, compounded by a lack of assistance or response from airline customer service.",
+    "journeyStep": "Collecting luggage"
+  },
+  {
+    "reviewDateOfExperience": "2024-10-16",
+    "reviewTitle": "Very poor customer service",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The review expresses dissatisfaction with poor customer service following a flight cancellation, highlighting limited communication, additional costs incurred, and lack of compensation or support from the airline.",
+    "journeyStep": "Receiving booking confirmation"
+  },
+  {
+    "reviewDateOfExperience": "2024-10-01",
+    "reviewTitle": "Ridiculously expensive seats and luggages",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer faced unexpected high costs for seats and luggage, which were not clearly communicated during the purchase process, leading to frustration and the decision to no longer use the airline. The customer also expresses dissatisfaction with the lack of response to complaints.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-16",
+    "reviewTitle": "What a joke of a company",
+    "reviewRatingScore": 1,
+    "reviewSummary": "Customer faced constant glitches and crashes on the website, repeated requests for the same information during booking, and extremely poor customer service both online and on calls with issues unresolved for days. Additionally, they experienced dissatisfaction with the in-flight service, including staff attitudes and comfort, highlighting a significant decline in the brand's quality and customer experience over the years.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2024-12-09",
+    "reviewTitle": "BA data breach & account hacked no help",
+    "reviewRatingScore": 1,
+    "reviewSummary": "Customer experienced a frustrating situation where their account was hacked, causing a severe delay in booking flights with airmiles. Despite reassurances and efforts to rectify the situation, communication and resolution from the airline were inadequate, leading the customer to book with another airline. The issue highlighted a serious data breach, with the customer's personal information being compromised and a lack of effective response from the airline.",
+    "journeyStep": "Discovering available flights"
+  },
+  {
+    "reviewDateOfExperience": "2024-11-08",
+    "reviewTitle": "Zero stars is not an option sadly",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer experienced a cancelled flight with Loganair booked through BA, which was inaccurately recorded as only a minor delay. After over 70 days of disputes, BA finally acknowledged the cancellation but the resolution process was hampered by ineffective customer service and communication barriers.",
+    "journeyStep": "Receiving booking confirmation"
+  },
+  {
+    "reviewDateOfExperience": "2024-12-27",
+    "reviewTitle": "No loyalty",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer is disappointed due to issues with the Executive Club portal that led to the expiration of a companion voucher, and a perceived lack of loyalty rewards from the Avios scheme, resulting in BA being blacklisted by the customer.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-05",
+    "reviewTitle": "Just wanted to say how good the cabin…",
+    "reviewRatingScore": 5,
+    "reviewSummary": "The reviewer praises highly the excellent cabin crew service, especially mentioning Molly on the top deck and Julie from a specific flight, and appreciates the pilots' performance, highlighting an overall fantastic experience.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-14",
+    "reviewTitle": "Flying back from Schipol in The…",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer faced a frustrating experience trying to change flights at Schipol Airport, including being told to call customer service instead of handling the request in person, being charged an unexpected fee for changing flights, and ultimately having the original booking cancelled and needing to be reinstated, all of which resulted in wasted time and no accommodation for an earlier flight despite efforts.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2024-12-17",
+    "reviewTitle": "Flights cancelled took 5 days and 1hr a…",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The flights were cancelled, leading to a stressful 5-day process to amend the situation, incurring additional costs for hotel and taxi changes, with the airline's response being unsatisfactory and dismissive.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2024-07-05",
+    "reviewTitle": "Outstanding service when flying to…",
+    "reviewRatingScore": 5,
+    "reviewSummary": "The service received when flying to and from the United States with a disabled daughter was outstanding, with the staff showing respect and kindness throughout the entire journey.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2024-11-15",
+    "reviewTitle": "Our flight was very late Manchester to…",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The flight was significantly delayed, resulting in missed connections and substantial additional costs with no empathetic support from the staff. The experience was described as exhausting and awful, leading to a strong recommendation against using the airline.",
+    "journeyStep": "Landing and disembarking"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-10",
+    "reviewTitle": "Never again … an abysmal airline",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The reviewer had a terrible experience on a BA overnight flight due to extremely uncomfortable and cramped economy seats, poor food quality, and a significant delay on the tarmac after landing due to no available bus drivers. They mentioned the discomfort led to physical pain and found the situation unacceptable, especially considering the high cost of the flight.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-10",
+    "reviewTitle": "We had such a great experience with BA…",
+    "reviewRatingScore": 5,
+    "reviewSummary": "The review speaks to a positive experience with the airline's customer service team, noting their kindness and helpfulness in rescheduling flights due to illness and external events. The customer found this service notably better than typical call centre experiences.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-10",
+    "reviewTitle": "Fabulous service Heathrow to Madrid",
+    "reviewRatingScore": 5,
+    "reviewSummary": "Despite a 1.5-hour delay due to issues in Madrid, the flight crew, including the Captain and attendants, provided outstanding service, sharing local recommendations, and celebrating a passenger's birthday with a complimentary bottle of champagne, which significantly enhanced the flying experience.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-13",
+    "reviewTitle": "2 hours to reschedule a flight - without success!",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer experienced significant frustration trying to reschedule an Avios reward flight with British Airways, facing a confusing customer service system with multiple failed attempts.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2024-09-12",
+    "reviewTitle": "Terrible treatment on a business class…",
+    "reviewRatingScore": 1,
+    "reviewSummary": "Experienced terribly distressing treatment on a business class flight due to being seated separately after a plane change, exacerbated by poor customer service and difficulty obtaining a refund for chosen seats. Complaints about the treatment and disregard for passenger distress were met with an unsatisfactory e-voucher apology.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-13",
+    "reviewTitle": "Access to BA customer service",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer is frustrated due to the inability to obtain a receipt for flights with BA, experiencing poor customer service with unresolved cases and disconnected live chats, leading to a loss of faith in the airline.",
+    "journeyStep": "Receiving booking confirmation"
+  },
+  {
+    "reviewDateOfExperience": "2024-12-26",
+    "reviewTitle": "Came here to write a one star review",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The reviewer expresses extreme dissatisfaction due to the cancellation of their flight on Boxing Day by British Airways, with no alternative flights offered, leading to significantly higher costs with another carrier. They also mention being ignored after lodging a complaint, culminating in a determined decision never to fly with the airline again.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2024-12-09",
+    "reviewTitle": "No catering on flight in business class",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The review expresses disappointment and frustration over the lack of catering on a business class flight and the airline's non-responsive attitude toward their complaint, indicating a potential loss of future customer support.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2024-12-30",
+    "reviewTitle": "BA reveal themselves as vicious and uncaring",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer faced significant disruptions, starting with the original flight cancellation, a delay over 6 hours without communication, and costly repercussions upon hotel arrival due to said delays, culminating in unsympathetic customer service and a refusal to refund for lost accommodation nights.",
+    "journeyStep": "Receiving booking confirmation"
+  },
+  {
+    "reviewDateOfExperience": "2024-11-17",
+    "reviewTitle": "This started with a cancelled flight",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer experienced significant frustration and inconvenience due to a cancelled return flight, lacking support for rebooking and additional charges, along with difficulty in claiming reimbursements for extra expenses, leading to dissatisfaction with customer service and consideration of not using the airline again.",
+    "journeyStep": "Receiving booking confirmation"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-12",
+    "reviewTitle": "Like many people said",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The review expresses deep dissatisfaction with the airline due to arrogant and extremely rude staff, unhelpful and disorganized service, leading to a vow to choose competitors in the future.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-12",
+    "reviewTitle": "Dear OWNERS of British Airlines",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer experienced a significant delay and poor service on flight BA 0552, including a two-hour wait for crew replacement, an additional 1.5-hour wait for flight attendant replacement, and rude staff behavior, leading to a negative perception of British Airways.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-12",
+    "reviewTitle": "Great service",
+    "reviewRatingScore": 5,
+    "reviewSummary": "Received amazing service from Lindsey during the rebooking process for a holiday, highlighting her patience and simplicity in handling the situation.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-12",
+    "reviewTitle": "Unfriendly food disgusting hardly any…",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The in-flight service was unfriendly, and the food was disgusting with hardly any drinks offered on the long haul flight.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-11",
+    "reviewTitle": "BA worst airline in the WORLD!!",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer expressed extreme dissatisfaction after BA cancelled their return flight for 'Commercial Reasons,' leaving them with £2000 in additional expenses for replacement flights and accommodations, and refused compensation. The customer, a former loyal gold card holder, plans to pursue the matter with an ombudsman and legal action, highlighting a systematic issue with BA's customer service and policies.",
+    "journeyStep": "Receiving booking confirmation"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-02",
+    "reviewTitle": "Very disappointing flight",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The review expresses significant disappointment with British Airways, highlighting arrogant and unresponsive cabin crew, poor quality food, and uncomfortable seating. Moreover, the customer faced issues while attempting to upgrade their seat and never received a drink they requested during the flight.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-11",
+    "reviewTitle": "Poor customer service",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer experienced significant frustration with booking a family holiday due to inconsistent information and long wait times over multiple calls with British Airways staff, who were also described as arrogant. In contrast, Virgin Atlantic provided a notably better customer service experience.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-02",
+    "reviewTitle": "They get such a slating but I actually like them and recently had a great experience with them",
+    "reviewRatingScore": 5,
+    "reviewSummary": "The review implies a positive improvement, though details are not provided.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2024-03-13",
+    "reviewTitle": "HORRIBLE CUSTOMER SERVICE",
+    "reviewRatingScore": 1,
+    "reviewSummary": "Customer faced a frustrating experience with a cancelled booking, encountering poor customer service, misinformation, and delays in refund processing for several months, eventually being offered an inadequate compensation.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-04",
+    "reviewTitle": "Such arrogant staff and poor service all in all",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The service was arrogant and poor, with unmonitored obnoxious behavior from senior staff. The food, facilities, and entertainment were inadequate for a long-haul flight, with no positive aspects to highlight.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-08",
+    "reviewTitle": "Possibly the Worst Website a Mediocre Airline Ever Had",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer had a frustrating experience with multiple flights being not on time, and their checked luggage being lost twice, coupled with a difficult experience using the airline's website for information.",
+    "journeyStep": "Collecting luggage"
+  },
+  {
+    "reviewDateOfExperience": "2024-12-28",
+    "reviewTitle": "Efficient helpful professional airline",
+    "reviewRatingScore": 5,
+    "reviewSummary": "The customer had a great booking experience and received exceptional support from the customer service desk at Sydney airport for a flight change.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-10",
+    "reviewTitle": "Don’t fly Ba you will never get onward taxi transport",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The reviewer experienced a last-minute flight cancellation from Heathrow to Austin with British Airways, causing a loss of £150 and leading to frustration for both the driver and the passengers.",
+    "journeyStep": "Receiving booking confirmation"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-08",
+    "reviewTitle": "Gobsmackingly inept company",
+    "reviewRatingScore": 1,
+    "reviewSummary": "Extremely dissatisfied with BA's customer service after leaving an item on the plane; the website and phone support were unresponsive, and the complaints form was non-functional.",
+    "journeyStep": "Landing and disembarking"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-10",
+    "reviewTitle": "British Airways should leave the service industry",
+    "reviewRatingScore": 1,
+    "reviewSummary": "Due to a delayed first flight, the travelers missed their connecting flight and had to deal with major inconveniences including a significant delay, poor seat assignments, missed personal appointments, and exceedingly poor customer service at the airport, exacerbating the overall distressing experience.",
+    "journeyStep": "Waiting at the gate"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-10",
+    "reviewTitle": "Last 2 flights lost all bags",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer experienced repeated luggage loss on prior flights, and during a tight connection at Heathrow T5, encountered extremely poor and unhelpful service from a staff member, resulting in missing their connecting flight and a significant delay. They expressed extreme frustration and disappointment, vowing never to fly with the airline again after 30 years of loyalty.",
+    "journeyStep": "Arriving at the airport"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-10",
+    "reviewTitle": "No rules or regulations?",
+    "reviewRatingScore": 1,
+    "reviewSummary": "Customer frustrated with unclear baggage fee policies, with staff citing discretion at check-in over clear regulations.",
+    "journeyStep": "Checking in luggage"
+  },
+  {
+    "reviewDateOfExperience": "2024-10-14",
+    "reviewTitle": "AVOID",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The review expresses frustration over the lack of consideration for a customer's emergency situation related to a health issue, feeling ignored by the service provider.",
+    "journeyStep": "Booking flights"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-08",
+    "reviewTitle": "An update and warning for those waiting for compensation and refunds from BA",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The reviewer expresses extreme dissatisfaction with British Airways (BA) due to a cancelled flight leading to a 21-hour delay and over 40 hours of travel. The customer service response was poor, with difficulties in contacting them, and a lack of helpful information regarding compensation claims. The reviewer wishes for BA's landing slots at Heathrow to be given to another operator, indicating a complete loss of trust and dissatisfaction with the airline.",
+    "journeyStep": "Receiving booking confirmation"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-04",
+    "reviewTitle": "Great Flight. Great Crew.BA0662",
+    "reviewRatingScore": 5,
+    "reviewSummary": "Check-in at Larnaca for a passenger with a disability was smooth, with especially efficient passenger assistance and the handling of an electric scooter. The flight and cabin crew provided superb care throughout the journey, ensuring a perfect end to a holiday.",
+    "journeyStep": "Checking in luggage"
+  },
+  {
+    "reviewDateOfExperience": "2024-12-22",
+    "reviewTitle": "Horrible experience with someone with autism",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The reviewer had a very unpleasant experience with a security staff member at Heathrow on the 22nd of December, feeling abused by both Heathrow security and British Airways staff, particularly noting their condition on the autistic spectrum.",
+    "journeyStep": "Going through airport security"
+  },
+  {
+    "reviewDateOfExperience": "2024-01-08",
+    "reviewTitle": "The worlds worst airline (after Ryan…",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The reviewer faces high demand issues on ba.com, leading to delays and showcasing frustration with the airline, ranking it as the second worst after Ryan Air.",
+    "journeyStep": "Discovering available flights"
+  },
+  {
+    "reviewDateOfExperience": "2024-09-20",
+    "reviewTitle": "Lack of customer care",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The reviewer expresses disappointment with BA due to a cancelled flight and the airline's subsequent handling of their request for compensation for the difference in cost between their original and replacement flights. Despite being refunded, they highlight a lack of customer care and communication, culminating in a rejection of their request on Christmas Day.",
+    "journeyStep": "Receiving booking confirmation"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-08",
+    "reviewTitle": "Worst airline in the uk",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The customer describes this as the worst airline in the UK, primarily due to terrible customer service.",
+    "journeyStep": "Experiencing the in-flight service"
+  },
+  {
+    "reviewDateOfExperience": "2024-07-24",
+    "reviewTitle": "I honestly cannot believe this company…",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The review expresses extreme dissatisfaction with both a significant flight delay and the airline's mishandling and subsequent lack of follow-up regarding lost luggage. The customer service experience is described as the worst ever, with unresolved issues despite multiple complaints and attempts to contact the complaints department.",
+    "journeyStep": "Collecting luggage"
+  },
+  {
+    "reviewDateOfExperience": "2024-12-22",
+    "reviewTitle": "We were booked to sit upstairs on the…",
+    "reviewRatingScore": 1,
+    "reviewSummary": "A day before the flight, the reviewer found out their paid seat upstairs on the A380 had been moved without notification or refund, causing disappointment at the start of their Christmas holiday.",
+    "journeyStep": "Using the airline's app for check-in or information"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-07",
+    "reviewTitle": "They couldn’t care less",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The flight from Oslo was significantly delayed, and following a landing at an alternative airport, the service for onward travel and luggage handling was highly unsatisfactory, leaving the passenger without their belongings and feeling neglected by the airline.",
+    "journeyStep": "Collecting luggage"
+  },
+  {
+    "reviewDateOfExperience": "2024-01-07",
+    "reviewTitle": "Unprofessional",
+    "reviewRatingScore": 1,
+    "reviewSummary": "The reviewer faced a series of miscommunications and inefficiencies, including being wrongly informed about their connecting flight, receiving poor guidance at the airport, and dealing with unresponsive and ineffective customer service from British Airways, leading to a lost £470 and receiving a nearly useless £50 voucher.",
+    "journeyStep": "Using the airline's app for check-in or information"
+  },
+  {
+    "reviewDateOfExperience": "2025-01-03",
+    "reviewTitle": "Poor service and no reward for loyalty",
+    "reviewRatingScore": 1,
+    "reviewSummary": "Experienced a significant delay in ",
+    "journeyStep": "Collecting luggage"
+  }
+]

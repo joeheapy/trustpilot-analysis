@@ -7,7 +7,7 @@ from typing import List, Dict
 
 # Constants
 BATCH_SIZE = 5
-MAX_BATCHES = 5  # Set maximum number of batches to process
+MAX_BATCHES = 15  # Set maximum number of batches to process
 
 print(f"Processing {BATCH_SIZE * MAX_BATCHES} reviews")
 
@@ -89,10 +89,10 @@ def summarize_review() -> str:
     total_batches = min(len(batches), MAX_BATCHES)
     summarized_reviews = []
     
-    print(f"\nProcessing {MAX_BATCHES * BATCH_SIZE} reviews in {total_batches} batches")
-    # print("\nFirst batch content:")
+    print(f"Processing {MAX_BATCHES * BATCH_SIZE} reviews in {total_batches} batches")
+    # print("First batch content:")
     # print(json.dumps(batches[0], indent=2))
-    print("\nStarting batch processing...\n")
+    print("Starting batch processing...\n")
     
     for batch_num in range(1, total_batches + 1):
         try:

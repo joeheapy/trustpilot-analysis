@@ -38,15 +38,14 @@ def generate_graph():
 
         # Load data
         latest_file = get_latest_ratings()
-        print(f"Loading data from")
         
         with open(latest_file, 'r') as f:
             data = json.load(f)
-        print("Data loaded successfully")
+        # print("Data loaded successfully")
         
         journey_data = data['journeySteps']
         steps = list(journey_data.keys())
-        print(f"Found {len(steps)} journey steps")
+        # print(f"Found {len(steps)} journey steps")
         
         # Initialize data structures
         ratings = {i: [] for i in range(1, 6)}

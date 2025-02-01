@@ -30,7 +30,7 @@ def pre_process_raw_data():
         raise FileNotFoundError("No JSON files found in raw-trustpilot-data directory")
     
     input_path = os.path.join(raw_data_dir, json_files[0])
-    print(f"Processing file: {json_files[0]}")
+    # print(f"Processing file: {json_files[0]}")
     
     with open(input_path, 'r') as file:
         data = json.load(file)

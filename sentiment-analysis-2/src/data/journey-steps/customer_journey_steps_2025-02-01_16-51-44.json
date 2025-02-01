@@ -1,0 +1,16 @@
+{
+  "journeySteps": [
+    "Discovering available flights",
+    "Booking flights",
+    "Receiving booking confirmation",
+    "Using the airline's app for check-in or information",
+    "Arriving at the airport",
+    "Checking in luggage",
+    "Going through airport security",
+    "Waiting at the gate",
+    "Boarding the plane",
+    "Experiencing the in-flight service",
+    "Landing and disembarking",
+    "Collecting luggage"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "journeySteps": {
+    "Discovering available flights": {
+      "1": 2
+    },
+    "Booking flights": {
+      "1": 12,
+      "5": 3
+    },
+    "Receiving booking confirmation": {
+      "1": 9
+    },
+    "Using the airline's app for check-in or information": {
+      "1": 2
+    },
+    "Arriving at the airport": {
+      "1": 1
+    },
+    "Checking in luggage": {
+      "1": 1,
+      "5": 1
+    },
+    "Going through airport security": {
+      "1": 1
+    },
+    "Waiting at the gate": {
+      "1": 1
+    },
+    "Boarding the plane": {
+      "1": 1
+    },
+    "Experiencing the in-flight service": {
+      "1": 10,
+      "5": 4
+    },
+    "Landing and disembarking": {
+      "1": 2
+    },
+    "Collecting luggage": {
+      "1": 5
+    }
+  }
+}

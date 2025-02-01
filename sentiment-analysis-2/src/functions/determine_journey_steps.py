@@ -13,7 +13,7 @@ REVIEWS_PER_SAMPLE = 100
 
 # Define prompts as constants
 JOURNEY_ANALYSIS_PROMPT = """
-Analyze these customer reviews and identify a minimum of 10 customer journey steps.
+Analyze these customer reviews and identify exactly 12 customer journey steps.
 Ensure steps include the customer using the service or product.
 The steps should be chronological and represent the typical customer journey from beginning to end.
 Return ONLY a list of journey step titles in a JSON array format.
