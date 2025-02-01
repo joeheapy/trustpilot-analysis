@@ -8,7 +8,8 @@ DIRECTORIES_TO_CLEAN = [
     'sample_for_journey_determination',
     'journey-steps',
     'summarized-reviews',
-    'ratings-by-step'
+    'ratings-by-step',
+    'visualizations'
 ]
 
 DIRECTORIES_TO_PRESERVE = [

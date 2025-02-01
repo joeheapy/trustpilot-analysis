@@ -9,4 +9,5 @@ __all__ = [
     'extract_sample_reviews',
     'analyze_journey_steps',
     'summarize_review'
+    'generate_graph'
 ]

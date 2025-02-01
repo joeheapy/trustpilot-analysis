@@ -1,0 +1,17 @@
+{
+  "journeySteps": [
+    "Browsing for flights",
+    "Selecting flights",
+    "Purchasing tickets",
+    "Receiving booking confirmation",
+    "Online check-in attempts",
+    "Arriving at the airport",
+    "Baggage check-in",
+    "Security clearance",
+    "Boarding",
+    "In-flight experience",
+    "Deplaning",
+    "Baggage reclaim",
+    "Filing compensation claims"
+  ]
+}

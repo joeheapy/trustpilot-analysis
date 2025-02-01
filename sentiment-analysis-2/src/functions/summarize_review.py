@@ -7,7 +7,9 @@ from typing import List, Dict
 
 # Constants
 BATCH_SIZE = 5
-MAX_BATCHES = 20  # Set maximum number of batches to process
+MAX_BATCHES = 5  # Set maximum number of batches to process
+
+print(f"Processing {BATCH_SIZE * MAX_BATCHES} reviews")
 
 # Define prompt as constant
 SUMMARY_PROMPT = """
@@ -68,7 +70,7 @@ def summarize_review() -> str:
         raise FileNotFoundError("No processed review files found")
     
     input_file = max(json_files, key=os.path.getctime)
-    print(f"Reading from: {input_file}")
+    # print(f"Reading from: {input_file}")
     
     # Initialize OpenAI
     client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
@@ -87,7 +89,7 @@ def summarize_review() -> str:
     total_batches = min(len(batches), MAX_BATCHES)
     summarized_reviews = []
     
-    print(f"\nProcessing {len(reviews)} reviews in {total_batches} batches (limited to {MAX_BATCHES})")
+    print(f"\nProcessing {MAX_BATCHES * BATCH_SIZE} reviews in {total_batches} batches")
     # print("\nFirst batch content:")
     # print(json.dumps(batches[0], indent=2))
     print("\nStarting batch processing...\n")

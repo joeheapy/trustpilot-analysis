@@ -1,6 +1,7 @@
 import json
 import os
 from datetime import datetime
+# import random
 
 def parse_experience_date(date_string):
     try:
@@ -48,6 +49,10 @@ def pre_process_raw_data():
             'reviewRatingScore': review['reviewRatingScore']
         }
         processed_data.append(processed_review)
+
+    # Randomize order of reviews
+    # random.shuffle(processed_data)
+    # print("Randomized review order")
     
     # Generate output filename with timestamp
     timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')

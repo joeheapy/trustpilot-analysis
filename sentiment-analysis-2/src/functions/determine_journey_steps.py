@@ -9,13 +9,13 @@ from openai import AsyncOpenAI
 from typing import Dict, List
 
 # Reviews per sample
-REVIEWS_PER_SAMPLE = 50
+REVIEWS_PER_SAMPLE = 100
 
 # Define prompts as constants
 JOURNEY_ANALYSIS_PROMPT = """
-Analyze these customer reviews and identify a minimum of 12 customer journey steps.
-Ensure steps include the customer using the service or product until their journey is complete
-The steps should be chronological and represent the typical customer journey.
+Analyze these customer reviews and identify a minimum of 10 customer journey steps.
+Ensure steps include the customer using the service or product.
+The steps should be chronological and represent the typical customer journey from beginning to end.
 Return ONLY a list of journey step titles in a JSON array format.
 DO NOT include 'feedback' as a step.
 DO NOT start steps with 'the customer' or 'customer'.
@@ -45,7 +45,7 @@ def extract_sample_reviews() -> str:
             raise FileNotFoundError("No processed review files found")
         
         latest_file = max(json_files, key=os.path.getctime)
-        print(f"Reading from: {latest_file}")
+        # print(f"Reading from: {latest_file}")
         
         # Read and sample reviews
         with open(latest_file, 'r') as file:
@@ -92,7 +92,7 @@ def analyze_journey_steps() -> str:
             raise FileNotFoundError(f"No sample files found in {sample_dir}")
         
         input_file = max(sample_files, key=os.path.getctime)
-        print(f"Using sample file: {input_file}")
+        # print(f"Using sample file: {input_file}")
         
         # Initialize OpenAI with explicit API key
         client = OpenAI(api_key=api_key)

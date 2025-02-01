@@ -3,6 +3,7 @@ from functions.pre_process_raw_data import pre_process_raw_data
 from functions.determine_journey_steps import extract_sample_reviews, analyze_journey_steps
 from functions.summarize_review import summarize_review
 from functions.count_ratings_by_step import count_ratings_by_step
+from functions.generate_graph import generate_graph
 
 def main():
     try:
@@ -23,6 +24,9 @@ def main():
 
         # Count ratings by step
         count_ratings_by_step()
+
+        # Generate graph
+        generate_graph()
 
         
     except Exception as e:

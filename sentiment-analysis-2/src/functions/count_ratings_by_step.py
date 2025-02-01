@@ -57,7 +57,7 @@ def count_ratings_by_step() -> str:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump({"journeySteps": ratings}, f, indent=2, ensure_ascii=False)
         
-        print(f"Saved ordered ratings to: {output_file}")
+        print(f"Saved ordered ratings")
         return output_file
         
     except Exception as e:
